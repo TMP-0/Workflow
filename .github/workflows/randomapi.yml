@@ -50,4 +50,4 @@ jobs:
         git push -q origin master
     - name: Remove Data
       run: |
-        rm -rf $GITHUB_WORKSPACE
+        ls -Q | grep -v .github | xargs rm -rf
