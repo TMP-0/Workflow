@@ -49,3 +49,6 @@ jobs:
     - name: Test Api #Api调用
       run: | 
         python testapi.py
+    - name: Remove Data
+      run: |
+        ls -Q | grep -v .github | xargs rm -rf
