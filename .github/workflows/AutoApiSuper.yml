@@ -23,6 +23,7 @@ jobs:
       uses: actions/checkout@master
       with:
         repository: 'TMP-0/Data'
+        ref: 'master'
         ssh-key: '${{ secrets.DATA_DEPLOY_KEY }}'
     - name: Set up Python #安装python
       uses: actions/setup-python@v1
